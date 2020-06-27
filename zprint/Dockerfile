@@ -10,7 +10,7 @@ LABEL "homepage"="http://github.com/bltavares/actions"
 LABEL "maintainer"="Bruno Tavares <connect+githubactions@bltavares.com>"
 
 RUN echo '{:search-config? true}' >~/.zprint.edn \
-  && boot -d boot-fmt:0.1.8 -d zprint:0.4.15 fmt --help >/dev/null
+  && boot -d boot-fmt -d zprint fmt --help >/dev/null
 RUN apk --no-cache add curl jq bash git
 
 COPY lib.sh /lib.sh

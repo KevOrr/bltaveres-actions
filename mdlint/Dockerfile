@@ -9,7 +9,7 @@ LABEL "repository"="http://github.com/bltavares/actions"
 LABEL "homepage"="http://github.com/bltavares/actions"
 LABEL "maintainer"="Bruno Tavares <connect+githubactions@bltavares.com>"
 
-RUN npm install -g markdownlint-cli@0.13.0
+RUN npm install -g markdownlint-cli
 
 RUN apk --no-cache add curl jq bash git
 

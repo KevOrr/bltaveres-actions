@@ -1,4 +1,4 @@
-FROM alpine:3.8
+FROM alpine
 
 LABEL "com.github.actions.name"="bash"
 LABEL "com.github.actions.description"="Provides shell utilities such as curl and make"

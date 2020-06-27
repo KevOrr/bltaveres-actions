@@ -1,5 +1,5 @@
-FROM garethr/kubeval:0.7.3 as kubeval
-FROM alpine:3.8
+FROM garethr/kubeval as kubeval
+FROM alpine
 
 LABEL "com.github.actions.name"="kubeval"
 LABEL "com.github.actions.description"="Provides k8s linting using kubeval"

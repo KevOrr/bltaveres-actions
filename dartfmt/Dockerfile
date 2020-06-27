@@ -1,4 +1,4 @@
-FROM google/dart:2
+FROM google/dart
 
 LABEL "com.github.actions.name"="dartfmt"
 LABEL "com.github.actions.description"="Provides formating and fixes for Dart using dartfmt"

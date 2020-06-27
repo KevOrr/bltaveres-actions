@@ -1,4 +1,4 @@
-FROM google/dart:2
+FROM google/dart
 
 LABEL "com.github.actions.name"="dartanalyzer"
 LABEL "com.github.actions.description"="Provides linting for Dart projects using dartanalyzer"

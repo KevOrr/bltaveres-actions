@@ -9,7 +9,7 @@ LABEL "repository"="http://github.com/bltavares/actions"
 LABEL "homepage"="http://github.com/bltavares/actions"
 LABEL "maintainer"="Bruno Tavares <connect+githubactions@bltavares.com>"
 
-RUN npm install -g tslint@5.12.1 typescript@3.2.4
+RUN npm install -g tslint typescript
 
 RUN apk --no-cache add curl jq bash git
 

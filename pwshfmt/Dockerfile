@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/powershell:6.1.0-rc.1-alpine-3.8
+FROM mcr.microsoft.com/powershell:alpine-3.10
 
 LABEL "com.github.actions.name"="pwshfmt"
 LABEL "com.github.actions.description"="Provides Powershell formatter using PowerShell-Beautifier"

@@ -1,5 +1,5 @@
-FROM hadolint/hadolint:v1.15.0 as hadolint
-FROM alpine:3.8
+FROM hadolint/hadolint as hadolint
+FROM alpine
 
 LABEL "com.github.actions.name"="hadolint"
 LABEL "com.github.actions.description"="Provides Dockerfile linting using hadolint"

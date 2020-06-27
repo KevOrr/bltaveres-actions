@@ -1,4 +1,4 @@
-FROM python:3.7.4-alpine
+FROM python:3-alpine
 
 LABEL "com.github.actions.name"="yaml"
 LABEL "com.github.actions.description"="Provides linting and fixes using yamllint"

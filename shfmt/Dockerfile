@@ -1,5 +1,5 @@
-FROM mvdan/shfmt:v2.6.3 as shfmt
-FROM alpine:3.8
+FROM mvdan/shfmt as shfmt
+FROM alpine
 
 LABEL "com.github.actions.name"="shfmt"
 LABEL "com.github.actions.description"="Provides linting and fixes using shfmt"
