@@ -9,7 +9,7 @@ LABEL "repository"="http://github.com/bltavares/actions"
 LABEL "homepage"="http://github.com/bltavares/actions"
 LABEL "maintainer"="Bruno Tavares <connect+githubactions@bltavares.com>"
 
-RUN npm install -g tslint typescript
+RUN npm install -g tslint typescript codelyzer
 
 RUN apk --no-cache add curl jq bash git
 
