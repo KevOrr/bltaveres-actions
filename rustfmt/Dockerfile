@@ -11,11 +11,7 @@ LABEL "maintainer"="Bruno Tavares <connect+githubactions@bltavares.com>"
 
 RUN rustup component add rustfmt
 
-RUN apt-get update -qq && apt-get install -qqy --no-install-recommends \
-  curl=7.52* \
-  jq=1.5* \
-  bash=4.4* \
-  git=1:2.11* \
+RUN apt-get update -qq && apt-get install -qqy --no-install-recommends curl jq bash git \
   && rm -rf /var/lib/apt/lists/*
 
 COPY lib.sh /lib.sh

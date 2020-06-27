@@ -11,14 +11,7 @@ LABEL "maintainer"="Bruno Tavares <connect+githubactions@bltavares.com>"
 
 RUN rustup component add clippy && cargo install cargo-fix --version 0.4.1
 
-RUN apt-get update -qq && apt-get install -qqy --no-install-recommends \
-  curl=7.52* \
-  jq=1.5* \
-  bash=4.4* \
-  git=1:2.11* \
-  libssl-dev=1.1* \
-  zlib1g-dev=1:1.2* \
-  pkg-config=0.29* \
+RUN apt-get update -qq && apt-get install -qqy --no-install-recommends curl jq bash git libssl-dev zlib1g-dev pkg-config \
   && rm -rf /var/lib/apt/lists/*
 
 COPY lib.sh /lib.sh
