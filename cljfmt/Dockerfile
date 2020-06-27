@@ -11,11 +11,7 @@ LABEL "maintainer"="Bruno Tavares <connect+githubactions@bltavares.com>"
 
 RUN clojure -Sdeps '{:deps {lein-cljfmt {:mvn/version "0.6.4"}}}' -e ':ok'
 
-RUN apk --no-cache add \
-  curl~=7 \
-  jq~=1.6 \
-  bash~=4 \
-  git~=2
+RUN apk --no-cache add curl jq bash git
 
 COPY lib.sh /lib.sh
 COPY entrypoint.sh /entrypoint.sh

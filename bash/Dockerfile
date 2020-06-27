@@ -9,16 +9,7 @@ LABEL "repository"="http://github.com/bltavares/actions"
 LABEL "homepage"="http://github.com/bltavares/actions"
 LABEL "maintainer"="Bruno Tavares <connect+githubactions@bltavares.com>"
 
-RUN apk --no-cache add \
-  curl~=7 \
-  wget~=1.20 \
-  jq~=1.6 \
-  bash~=4 \
-  git~=2 \
-  make~=4.2 \
-  binutils~=2.30 \
-  file~=5.32 \
-  zip~=3.0
+RUN apk --no-cache add curl wget jq bash git make binutils file zip
 
 COPY lib.sh /lib.sh
 COPY entrypoint.sh /entrypoint.sh

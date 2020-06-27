@@ -11,11 +11,7 @@ LABEL "maintainer"="Bruno Tavares <connect+githubactions@bltavares.com>"
 
 RUN echo '{:search-config? true}' >~/.zprint.edn \
   && boot -d boot-fmt:0.1.8 -d zprint:0.4.15 fmt --help >/dev/null
-RUN apk --no-cache add \
-  curl~=7 \
-  jq~=1.6 \
-  bash~=4 \
-  git~=2
+RUN apk --no-cache add curl jq bash git
 
 COPY lib.sh /lib.sh
 COPY entrypoint.sh /entrypoint.sh

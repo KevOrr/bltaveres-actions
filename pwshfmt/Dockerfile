@@ -12,11 +12,7 @@ LABEL "maintainer"="Bruno Tavares <connect+githubactions@bltavares.com>"
 RUN pwsh -c 'Install-Module -Name PowerShell-Beautifier -Force'
 RUN pwsh -c 'Import-Module PowerShell-Beautifier.psd1'
 
-RUN apk --no-cache add \
-  curl~=7 \
-  jq~=1.6 \
-  bash~=4 \
-  git~=2
+RUN apk --no-cache add curl jq bash git
 
 COPY lib.sh /lib.sh
 COPY entrypoint.sh /entrypoint.sh
